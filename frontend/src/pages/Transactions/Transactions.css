@@ -1,0 +1,146 @@
+.transactions-page {
+    padding: 1rem;
+    animation: fadeIn 0.3s ease;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+}
+
+.search-wrapper,
+.filter-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: border-color 0.2s;
+}
+
+.search-wrapper:focus-within,
+.filter-wrapper:focus-within {
+    border-color: var(--accent-primary);
+}
+
+.search-icon,
+.filter-icon {
+    color: var(--text-secondary);
+    margin-right: 0.5rem;
+}
+
+.search-wrapper input {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    outline: none;
+    width: 200px;
+}
+
+.filter-wrapper select {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    outline: none;
+    cursor: pointer;
+}
+
+.transactions-table-container {
+    overflow-x: auto;
+    padding: 0;
+}
+
+.transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transactions-table th {
+    text-align: left;
+    padding: 1rem 1.5rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.transactions-table td {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.transactions-table tr:last-child td {
+    border-bottom: none;
+}
+
+.transactions-table tr:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.tx-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+}
+
+.icon-box {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box.income {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+}
+
+.icon-box.expense {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+}
+
+td.income {
+    color: #10b981;
+    font-weight: 600;
+}
+
+td.expense {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.status-badge.completed {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+}
+
+.no-results {
+    padding: 3rem;
+    text-align: center;
+    color: var(--text-secondary);
+}

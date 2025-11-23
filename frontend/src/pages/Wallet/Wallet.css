@@ -1,0 +1,125 @@
+.wallet-page {
+    padding: 1rem;
+    animation: fadeIn 0.3s ease;
+}
+
+.wallet-page h1 {
+    margin-bottom: 2rem;
+}
+
+.wallet-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.card-display {
+    background: linear-gradient(135deg, var(--accent-primary), #4f46e5);
+    padding: 2rem;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 1rem;
+    box-shadow: 0 10px 30px rgba(79, 70, 229, 0.3);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    opacity: 0.8;
+}
+
+.card-number {
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    margin-bottom: 3rem;
+    font-family: monospace;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-holder,
+.card-expiry {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.card-holder span,
+.card-expiry span {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.add-card-btn {
+    width: 100%;
+    padding: 1rem;
+    border: 2px dashed var(--border-color);
+    border-radius: 12px;
+    background: none;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.add-card-btn:hover {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+}
+
+.balance-breakdown {
+    padding: 1.5rem;
+}
+
+.balance-breakdown h3 {
+    margin-bottom: 1.5rem;
+}
+
+.balance-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.balance-item:last-child {
+    border-bottom: none;
+}
+
+.icon-box.wallet {
+    background: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+}
+
+.icon-box.savings {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+}
+
+.balance-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.balance-info span {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.balance-info strong {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .wallet-grid {
+        grid-template-columns: 1fr;
+    }
+}
